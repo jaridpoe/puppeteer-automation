@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 
-describe("interacting with inputs, checkbox, buttons, and dropdown", () => {
+describe("interacting with inputs, checkbox, buttons, dropdown, and submit", () => {
   it("should fill out and submit form", async () => {
     const browser = await puppeteer.launch({
       headless: false,
