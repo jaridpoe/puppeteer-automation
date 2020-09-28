@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
 
-describe("My first puppeteer test", () => {
+describe("interacting with launching, pausing, and reloading", () => {
   it("should launch the browser?", async () => {
     const browser = await puppeteer.launch({
       headless: false,

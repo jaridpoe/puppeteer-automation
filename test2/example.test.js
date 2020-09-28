@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 
-describe("My second puppeteer test", () => {
-  it("should launch the browser?", async () => {
+describe("interacting with go back & forward in the browser", () => {
+  it("should go back and forward in browser", async () => {
     const browser = await puppeteer.launch({
       headless: false,
       slowMo: 500,
