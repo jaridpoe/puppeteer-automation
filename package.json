@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test"
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test",
+    "test2": "./node_modules/mocha/bin/mocha --timeout=30000 ./test2"
   },
   "keywords": [
     "puppeteer",
