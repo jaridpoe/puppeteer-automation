@@ -9,7 +9,10 @@ describe("My first puppeteer test", () => {
     });
     const page = await browser.newPage();
     await page.goto("http://example.com");
-    await page.waitFor(3000);
+    await page.waitForTimeout(3000);
+    await page.waitForSelector("h1");
+    await page.reload();
+    await page.waitForTimeout(3000);
     await page.waitForSelector("h1");
     await browser.close();
   });
