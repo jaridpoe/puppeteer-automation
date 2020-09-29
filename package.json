@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test",
-    "test2": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test2",
-    "test3": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test3",
-    "test4": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test4",
-    "test5": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test5",
-    "test6": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test6",
-    "test7": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test7",
-    "test8": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test8",
-    "test9": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test9"
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.pausing-reloading",
+    "test2": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.foward-backword",
+    "test3": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.inputs",
+    "test4": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.get-title-url",
+    "test5": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.element-text",
+    "test6": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.element-count",
+    "test7": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.default-timeouts",
+    "test8": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.assertions",
+    "test9": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.keyboard-simulate"
   },
   "keywords": [
     "puppeteer",
