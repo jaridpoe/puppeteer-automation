@@ -10,7 +10,8 @@
     "test4": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test4",
     "test5": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test5",
     "test6": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test6",
-    "test7": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test7"
+    "test7": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test7",
+    "test8": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.test8"
   },
   "keywords": [
     "puppeteer",
