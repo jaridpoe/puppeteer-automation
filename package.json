@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/basic/example.pausing-reloading"
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/basic/example.pausing-reloading",
+    "test:device": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/advance/device.test"
   },
   "keywords": [
     "puppeteer",
