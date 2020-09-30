@@ -4,16 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.pausing-reloading",
-    "test2": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.foward-backword",
-    "test3": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.inputs",
-    "test4": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.get-title-url",
-    "test5": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.element-text",
-    "test6": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.element-count",
-    "test7": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.default-timeouts",
-    "test8": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.assertions",
-    "test9": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.keyboard-simulate",
-    "text10": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.xpath"
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/basic/example.pausing-reloading"
   },
   "keywords": [
     "puppeteer",
