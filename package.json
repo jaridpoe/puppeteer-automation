@@ -12,7 +12,8 @@
     "test6": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.element-count",
     "test7": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.default-timeouts",
     "test8": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.assertions",
-    "test9": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.keyboard-simulate"
+    "test9": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.keyboard-simulate",
+    "text10": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/example.xpath"
   },
   "keywords": [
     "puppeteer",
