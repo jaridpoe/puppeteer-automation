@@ -27,20 +27,20 @@ describe("device emulation", () => {
   it("Desktop device test", async () => {
     await page.setViewport({ width: 1650, height: 1050 });
     await page.goto("https://www.example.com");
-    await page.waitFor(5000);
+    await page.waitForTimeout(5000);
   });
 
   it("Tablet device test", async () => {
     const tablet = puppeteer.devices["iPad landscape"];
     await page.emulate(tablet);
     await page.goto("https://www.example.com");
-    await page.waitFor(5000);
+    await page.waitForTimeout(5000);
   });
 
   it("Mobile device test", async () => {
     const mobile = puppeteer.devices["iPhone X"];
     await page.emulate(mobile);
     await page.goto("https://www.example.com");
-    await page.waitFor(5000);
+    await page.waitForTimeout(5000);
   });
 });

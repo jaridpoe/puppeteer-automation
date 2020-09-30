@@ -49,6 +49,6 @@ describe("puppeteer hooks example", () => {
     await page.waitForSelector("#searchTerm");
     await page.type("#searchTerm", "Hello Word");
     await page.keyboard.press("Enter", { delay: 10 });
-    await page.waitFor(5000);
+    await page.waitForTimeout(5000);
   });
 });
