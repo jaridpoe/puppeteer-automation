@@ -1,8 +1,8 @@
 const puppeteer = require("puppeteer");
 const expect = require("chai").expect;
 
-describe("set keyboard press simulation", () => {
-  it("should simulate keyboard", async () => {
+describe("get xpath from xml", () => {
+  it("should get element from xml", async () => {
     const browser = await puppeteer.launch({
       headless: false,
       slowMo: 10,
