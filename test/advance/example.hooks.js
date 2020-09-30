@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 const expect = require("chai").expect;
 
-describe("set keyboard press simulation", () => {
+describe("puppeteer hooks example", () => {
   let browser;
   let page;
 
