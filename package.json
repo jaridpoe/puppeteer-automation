@@ -6,8 +6,8 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/basic/example.pausing-reloading",
     "test:device": "./node_modules/mocha/bin/mocha --timeout=30000 ./test/advance/device.test",
-    "test-snapshot": "jest --config=jest.config.js --detectOpenHandles --forceExit",
-    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
+    "test:snapshot": "jest --config=jest.config.js --detectOpenHandles --forceExit",
+    "test:snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit"
   },
   "keywords": [
     "puppeteer",
