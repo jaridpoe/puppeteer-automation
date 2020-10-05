@@ -25,4 +25,17 @@ describe("Visual Regression Testing", () => {
       failureThreshold: 500,
     });
   });
+
+  test("Mobile Snapshot", async () => {
+    await page.goto("https://www.example.com");
+    await page.waitForSelector("h1");
+    await page.emulate(puppeteer.devices['iPhone X'])
+    const image = await page.screenshot();
+    expect(image).toMatchImageSnapshot({
+      failureTresholdType: "pixel",
+      failureThreshold: 500,
+    });
+  });
+
+
 });
