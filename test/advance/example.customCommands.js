@@ -1,7 +1,13 @@
 const puppeteer = require("puppeteer");
 const expect = require("chai").expect;
 
-const { click, getText, getCount } = require("./../../lib/customCommands");
+const {
+  click,
+  getText,
+  getCount,
+  shouldNotExist,
+  waitForText,
+} = require("./../../lib/customCommands");
 
 describe("puppeteer hooks example", () => {
   let browser;
@@ -51,10 +57,7 @@ describe("puppeteer hooks example", () => {
     const selectorName = "#signin_button";
     await page.goto("http://zero.webappsecurity.com/index.html");
     await click(page, selectorName);
-    await page.waitFor(() => !document.querySelector(selectorName));
-    await page.waitForSelector(selectorName, {
-      hidden: true,
-      timeout: 3000,
-    });
+    await page.waitForTimeout(2000);
+    await shouldNotExist(page, selectorName);
   });
 });
