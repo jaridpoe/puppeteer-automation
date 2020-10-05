@@ -7,7 +7,7 @@ const {
   getCount,
   shouldNotExist,
   waitForText,
-} = require("./../../lib/customCommands");
+} = require("./../lib/customCommands");
 
 describe("puppeteer hooks example", () => {
   let browser;
