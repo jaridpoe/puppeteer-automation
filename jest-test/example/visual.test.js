@@ -6,6 +6,7 @@ expect.extend({ toMatchImageSnapshot });
 describe("Visual Regression Testing", () => {
   let browser;
   let page;
+  let url = "https://qa-grid-hub-allconnext.pantheonsite.io/internet";
 
   beforeAll(async () => {
     browser = await puppeteer.launch({ headless: true });
@@ -17,7 +18,7 @@ describe("Visual Regression Testing", () => {
   });
 
   test("Full Page Snapshot", async () => {
-    await page.goto("https://www.example.com");
+    await page.goto(url);
     await page.waitForSelector("h1");
     const image = await page.screenshot();
     expect(image).toMatchImageSnapshot({
@@ -27,7 +28,7 @@ describe("Visual Regression Testing", () => {
   });
 
   test("Mobile Snapshot", async () => {
-    await page.goto("https://www.example.com");
+    await page.goto(url);
     await page.waitForSelector("h1");
     await page.emulate(puppeteer.devices['iPhone X'])
     const image = await page.screenshot();
