@@ -14,7 +14,7 @@ export default class BasePage {
     return await page.url();
   }
   async takeDesktopSnapShot() {
-    const image = await page.screenshot();
+    const image = await page.screenshot({ fullPage: true });
     expect(image).toMatchImageSnapshot({
       failureTresholdType: "pixel",
       failureThreshold: 2000,
@@ -25,7 +25,7 @@ export default class BasePage {
   }
   async takeMobileSnapShot(deviceName) {
     await page.emulate(puppeteer.devices[deviceName]);
-    const image = await page.screenshot();
+    const image = await page.screenshot({ fullPage: true });
     expect(image).toMatchImageSnapshot({
       failureTresholdType: "pixel",
       failureThreshold: 2000,
